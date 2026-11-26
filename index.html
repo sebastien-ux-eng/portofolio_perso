@@ -3,403 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - DevOps Sébastien ISHUKWE</title>
+    <meta name="description" content="Portfolio de Sébastien ISHUKWE KIBUKILA, développeur Web et logiciel à Bukavu.">
+    <meta name="theme-color" content="#0b0d10">
+    <title>Portfolio — Sébastien ISHUKWE</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://sebastien-ux-eng.github.io/portofolio_perso/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Portfolio de Sébastien ISHUKWE">
+    <meta property="og:title" content="Sébastien ISHUKWE KIBUKILA — Développeur Web à Bukavu">
+    <meta property="og:description" content="Portfolio professionnel de Sébastien ISHUKWE KIBUKILA, développeur Web et logiciel basé à Bukavu, RDC.">
+    <meta property="og:url" content="https://sebastien-ux-eng.github.io/portofolio_perso/">
+    <meta property="og:image" content="https://sebastien-ux-eng.github.io/portofolio_perso/images/image1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sébastien ISHUKWE KIBUKILA — Développeur Web à Bukavu">
+    <meta name="twitter:description" content="Portfolio professionnel de Sébastien ISHUKWE KIBUKILA, développeur Web et logiciel basé à Bukavu, RDC.">
+    <meta name="twitter:image" content="https://sebastien-ux-eng.github.io/portofolio_perso/images/image1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sébastien ISHUKWE KIBUKILA",
+        "url": "https://sebastien-ux-eng.github.io/portofolio_perso/",
+        "jobTitle": "Développeur Web et logiciel",
+        "email": "mailto:ishukwejustin@gmail.com",
+        "telephone": "+243997604293",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bukavu",
+            "addressCountry": "CD"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/s%C3%A9bastien-ishukwe-a7b00032a",
+            "https://www.facebook.com/sebastien.ishukwe",
+            "https://x.com/Ishukwe2002",
+            "https://t.me/SebastienISHUKWE"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <!-- Header avec navigation -->
+    <a class="skip-link" href="#accueil">Aller au contenu principal</a>
+
     <header class="header">
-        <nav class="nav">
+        <nav class="nav" aria-label="Navigation principale">
             <div class="nav-container">
-                <div class="nav-logo">
-                    <h2>DevOps Sébastien</h2>
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#accueil" class="nav-link">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#apropos" class="nav-link">À propos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projets" class="nav-link">Projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                    <!-- <li class="nav-item"><a href="#cv" class="nav-link">CV</a></li> -->
+                <a class="nav-logo" href="#accueil" aria-label="Retour à l'accueil">
+                    <span class="logo-mark" aria-hidden="true">S</span>
+                    <span>DevOps Sébastien</span>
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À propos</a></li>
+                    <li><a href="#projets" class="nav-link">Projets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-                <div class="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <span class="nav-status"><span></span> Disponible</span>
             </div>
         </nav>
     </header>
 
-    <!-- Section Hero/Accueil -->
-    <section id="accueil" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Salut, je suis <br><span class="highlight">Sébastien ISHUKWE KIBUKILA</span></h1>
-                <p class="hero-subtitle">Développeur Web & Designer</p>
-                <p class="hero-description">Passionné par le développement web et les nouvelles technologies, 
-                    je met mes compétences au service de solutions modernes, 
-                    créatives et performantes.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
-                    <!-- <a href="#cv" class="btn btn-secondary">Mon curriculum vitae</a> -->
+    <main>
+        <section id="accueil" class="hero" aria-labelledby="hero-title">
+            <div class="hero-container container">
+                <div class="hero-content reveal">
+                    <p class="eyebrow"><span class="eyebrow-dot"></span> Développeur web · Bukavu, RDC</p>
+                    <h1 id="hero-title" class="hero-title">Je conçois des produits numériques <span class="highlight">clairs, utiles et mémorables.</span></h1>
+                    <p class="hero-subtitle">Sébastien ISHUKWE KIBUKILA <span>— Web & logiciel</span></p>
+                    <p class="hero-description">J'aide les entreprises et les porteurs de projets à transformer une idée en expérience digitale solide, de la première interface au produit final.</p>
+                    <div class="hero-buttons">
+                        <a href="#projets" class="btn btn-primary"><i class="fas fa-arrow-right" aria-hidden="true"></i> Voir mes projets</a>
+                        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                        <a href="Docs/CV_Sebastien_ISHUKWE_KIBUKILA.pdf" class="text-link" download><i class="fas fa-file-download" aria-hidden="true"></i> Télécharger mon CV</a>
+                    </div>
+                    <div class="hero-meta" aria-label="Informations principales">
+                        <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Bukavu, RDC</span>
+                        <span><i class="fas fa-circle" aria-hidden="true"></i> Disponible pour de nouvelles collaborations</span>
+                    </div>
+                </div>
+                <div class="hero-image reveal reveal-delay">
+                    <div class="portrait-frame">
+                        <span class="portrait-orbit portrait-orbit-one" aria-hidden="true"></span>
+                        <span class="portrait-orbit portrait-orbit-two" aria-hidden="true"></span>
+                        <img src="images/image1.jpg" alt="Portrait de Sébastien ISHUKWE KIBUKILA" class="profile-img">
+                        <div class="portrait-badge"><strong>01</strong><span>Selected<br>work</span></div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="images/image1.jpg" alt="Photo de profil" class="profile-img">
-            </div>
-        </div>
-    </section>
+            <a class="scroll-cue" href="#apropos" aria-label="Découvrir la section À propos"><span></span> Défiler pour découvrir</a>
+        </section>
 
-    <!-- Section À propos -->
-    <section id="apropos" class="about">
-        <div class="container">
-            <h2 class="section-title">À propos de moi</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Fort de plusieurs années d'expérience dans le développement Web et logiciel, je me spécialise dans la création d'applications modernes et responsives. Ma passion pour les technologies émergentes me pousse à constamment apprendre et à me perfectionner. Je réside en République Démocratique du Congo, province du Sud-Kivu, ville de Bukavu.
-                    </p>
-                    <p>
-                        Mon approche combine créativité et technicité pour livrer des solutions 
-                        qui répondent parfaitement aux besoins de mes clients tout en offrant 
-                        une expérience utilisateur exceptionnelle.
-                    </p>
+        <section id="apropos" class="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">01 — À propos</p>
+                    <h2 id="about-title" class="section-title">Créer avec curiosité,<br><span class="highlight">construire avec méthode.</span></h2>
                 </div>
-                <div class="skills">
-                    <h3>Mes compétences</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <i class="fas fa-file-excel"></i>
-                            <span>Bureautique</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>Bases de données</span>
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <p class="lead">Fort de plusieurs années d'expérience dans le développement Web et logiciel, je me spécialise dans la création d'applications modernes et responsives.</p>
+                        <p>Ma passion pour les technologies émergentes me pousse à apprendre et à me perfectionner constamment. Je réside en République démocratique du Congo, dans la province du Sud-Kivu, à Bukavu.</p>
+                        <p>Mon approche combine créativité et technicité pour livrer des solutions qui répondent aux besoins de mes clients tout en offrant une expérience utilisateur claire et mémorable.</p>
+                    </div>
+                    <div class="skills reveal reveal-delay">
+                        <div class="subsection-label"><span>Ce que je maîtrise</span><span class="line"></span></div>
+                        <div class="skills-grid">
+                            <div class="skill-item"><i class="fas fa-file-excel" aria-hidden="true"></i><span>Bureautique</span></div>
+                            <div class="skill-item"><i class="fab fa-html5" aria-hidden="true"></i><span>HTML5</span></div>
+                            <div class="skill-item"><i class="fab fa-css3-alt" aria-hidden="true"></i><span>CSS3</span></div>
+                            <div class="skill-item"><i class="fab fa-js-square" aria-hidden="true"></i><span>JavaScript</span></div>
+                            <div class="skill-item"><i class="fab fa-react" aria-hidden="true"></i><span>React</span></div>
+                            <div class="skill-item"><i class="fab fa-node-js" aria-hidden="true"></i><span>Node.js</span></div>
+                            <div class="skill-item"><i class="fas fa-database" aria-hidden="true"></i><span>Bases de données</span></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Projets -->
-    <section id="projets" class="projects">
-        <div class="container">
-            <h2 class="section-title">Mes Projets</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project1.png" alt="Projet 1">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Site E-commerce</h3>
-                        <p class="project-description">
-                            Développement d'une plateforme e-commerce complète avec 
-                            gestion des commandes, paiements sécurisés et interface d'administration.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                Voir le projet
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>
-                                Code source
-                            </a>
-                        </div>
-                    </div>
+        <section id="projets" class="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-heading section-heading-split reveal">
+                    <div><p class="eyebrow">02 — Sélection</p><h2 id="projects-title" class="section-title">Mes projets</h2></div>
+                    <p class="section-intro">Quelques réalisations qui illustrent ma manière de penser, de concevoir et de construire.</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <!-- <img src="images/project2.png" alt="Projet 2"> -->
-                        <img src="images/projet3.png" alt="Projet 2">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Site de voeux 2026</h3>
-                        <p class="project-description">
-                            Ce projet est un site web que j'ai développé pour permettre aux
-                            utilisateurs de créer et partage facilement des cartes de voeux pour l'année 2026.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Html</span>
-                            <span class="tech-tag">css</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Canvas API</span>
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-image"><img src="images/project1.png" alt="Aperçu du site e-commerce" loading="lazy"><span class="project-number">01</span></div>
+                        <div class="project-content">
+                            <p class="project-type">Plateforme web</p>
+                            <h3 class="project-title">Site E-commerce</h3>
+                            <p class="project-description">Plateforme e-commerce complète avec gestion des commandes, paiements sécurisés et interface d'administration.</p>
+                            <div class="project-tech"><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span></div>
+                            <div class="project-links"><a href="#contact" class="project-link">Demander une démo <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
                         </div>
-                        <div class="project-links">
-                            <a href="https://sebastien-ux-eng.github.io/carte_voeux_2026/" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                Voir le projet
-                            </a>
-                            <a href="https://sebastien-ux-eng.github.io/carte_voeux_2026/" class="project-link">
-                                <i class="fab fa-github"></i>
-                                Code source
-                            </a>
+                    </article>
+                    <article class="project-card reveal reveal-delay">
+                        <div class="project-image"><img src="images/projet3.png" alt="Aperçu du site de vœux 2026" loading="lazy"><span class="project-number">02</span></div>
+                        <div class="project-content">
+                            <p class="project-type">Expérience interactive</p>
+                            <h3 class="project-title">Site de vœux 2026</h3>
+                            <p class="project-description">Un site qui permet de créer et de partager facilement des cartes de vœux personnalisées pour l'année 2026.</p>
+                            <div class="project-tech"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Canvas API</span></div>
+                            <div class="project-links"><a href="https://sebastien-ux-eng.github.io/carte_voeux_2026/" target="_blank" rel="noopener noreferrer" class="project-link">Voir le projet <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project3.jpeg" alt="Projet Gestion des points">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Logiciel de Gestion des Points des Élèves (Excel)</h3>
-                        <p class="project-description">
-                            Développement d'un logiciel sur Excel pour la gestion automatisée des points des élèves, incluant le calcul des moyennes, le classement et la génération de rapports.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Excel VBA</span>
-                            <span class="tech-tag">Bureautique</span>
+                    </article>
+                    <article class="project-card reveal reveal-delay-more">
+                        <div class="project-image"><img src="images/project3.jpeg" alt="Aperçu du logiciel Excel de gestion des points" loading="lazy"><span class="project-number">03</span></div>
+                        <div class="project-content">
+                            <p class="project-type">Automatisation métier</p>
+                            <h3 class="project-title">Gestion des points des élèves</h3>
+                            <p class="project-description">Logiciel Excel automatisé pour le calcul des moyennes, le classement et la génération de rapports scolaires.</p>
+                            <div class="project-tech"><span class="tech-tag">Excel VBA</span><span class="tech-tag">Bureautique</span></div>
+                            <div class="project-links"><a href="#contact" class="project-link">Parler du projet <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></div>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                Voir le projet
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>
-                                Code source
-                            </a>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section CV -->
-    <!-- <section id="cv" class="cv">
-        <div class="container">
-            <h2 class="section-title">Mon curriculum vitae</h2>
-            <header>
-                <div class="header-content">
-                    <div class="profile-info">
-                        <h1>Sébastien ISHUKWE KIBUKILA</h1>
-                        <h2>Étudiant en Informatique de Gestion</h2>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact-item"><i class="fas fa-phone"></i><span>+243 997 604 293</span></div>
-                        <div class="contact-item"><i class="fas fa-envelope"></i><span>ishukwejustin@gmail.com</span></div>
-                        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Bukavu, RDC</span></div>
-                    </div>
-                </div>
-            </header>
-
-            <section class="section">
-                <h2 class="section-title"><i class="fas fa-user"></i> Profil</h2>
-                <p>Étudiant motivé en Informatique de Gestion à l'ISP-Bukavu...</p>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Formation</h2>
-                <div class="timeline">
-                    <div class="timeline-item"><div class="timeline-date">2023 - Présent</div><div class="timeline-title">ISP-Bukavu</div>
-                    <div class="timeline-subtitle">Département d'Informatique de Gestion</div><p>Graduat en cours</p></div>
-
-                    <div class="timeline-item"><div class="timeline-date">Mai 2023</div><div class="timeline-title">Mouvement xaveri</div>
-                    <div class="timeline-subtitle">Formation en Bureautique au CERDAF</div><p>Brêvet</p></div>
-
-                    <div class="timeline-item"><div class="timeline-date">2022 - 2023</div><div class="timeline-title">
-                        Complexe Scolaire La Puissance Divine</div>
-                    <div class="timeline-subtitle">Commerciale & Gestion</div><p>Diplôme d'État</p></div>
-
-                    <div class="timeline-item"><div class="timeline-date">Du 12 Juillet 2022 - 12 Août 2022</div><div class="timeline-title">
-                        Office Congolaise de Contrôle (OCC en sigle)</div><div class="timeline-subtitle">
-                            Commerciale & Gestion</div><p>Stage d'entreprise</p></div>
-                            
-                    <div class="timeline-item"><div class="timeline-date">2015 - 2016</div><div class="timeline-title">
-                        Ecole Primaire Burhiba</div><p>Certificat de fin d'étude primaire</p></div>
-
-                    <div class="timeline-item"><div class="timeline-date">En septembre 2023</div><div class="timeline-title">
-                        Croix rouge de la RDC</div><div class="timeline-subtitle">Formation en premier secours au centre 
-                            bandari à Bukavu</div><p>Certificat</p></div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title"><i class="fas fa-briefcase"></i> Expérience</h2>
-                <div class="timeline">
-                    <div class="timeline-item"><div class="timeline-title">Agent de Terrain & Activateur de Cartes SIM</div><div class="timeline-subtitle">Orange et Airtel, Bukavu</div><p>Activation de cartes SIM, support client...</p></div>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title"><i class="fas fa-laptop-code"></i> Compétences</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Informatique</h3><br>
-                        <div class="skill-item"><div class="skill-name"><span>Suite Microsoft Office : </span><br><span> 90%</span></div><div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div></div>
-                        <div class="skill-item"><div class="skill-name"><span>Programmation : </span><br><span> 60%</span></div><div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div></div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Langues</h3><br>
-                        <div class="language"><div class="language-name">Français</div><div class="language-level">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-                            </i><i class="fas fa-star"></i><i class="fas fa-star"></i></div></div>
-
-                        <div class="language"><div class="language-name">Kiswahili</div><div class="language-level">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star">
-                            </i><i class="fas fa-star -half-alt"></i><i class="fas fa-star -half-alt"></i></div></div>
-
-                        <div class="language"><div class="language-name">Anglais</div><div class="language-level">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star">
-                            </i><i class="far fa-star"></i><i class="far fa-star"></i></div></div>
-                    </div>
-                </div>
-            </section>
-
-            <footer>
-                <p>Je certifie sur l'honneur l'exactitude des informations communiquées dans ce CV.</p>
-                <p>Fait à Bukavu, le 27 janvier 2025</p><br><br>
-                    <a href="Docs/cv Sébastien.pdf" class="btn btn-primary" download><i class="fas fa-file-pdf"></i> Télécharger mon CV (PDF)</a>
-            </footer>
-        </div>
-    </section> -->
-
-    <!-- Section Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contactez-moi</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Restons en contact</h3>
-                    <p>
-                        Vous avez un projet en tête ? N'hésitez pas à me contacter 
-                        pour discuter de vos besoins et voir comment je peux vous aider.
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>ishukwejustin@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+243 997 604 293 </span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>République démocratique du Congo 🇨🇩, Bukavu </span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/s%C3%A9bastien-ishukwe-a7b00032a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://www.facebook.com/sebastien.ishukwe" class="social-link">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://x.com/Ishukwe2002?t=mfjopXkJFQNXrxbe7AcxJQ&s=09" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-
-                        <a href="https://wa.me/qr/FS6CKBPMZW36C1" class="social-link"><i class="fab fa-whatsapp "></i></a>
-                        <a href="https://t.me/SebastienISHUKWE" class="social-link">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                    </div>
-                </div>
-                <form id="contact-form" class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
-                </form>
+        <section class="cv-callout" aria-labelledby="cv-title">
+            <div class="container cv-callout-inner reveal">
+                <div><p class="eyebrow">Mon parcours en détail</p><h2 id="cv-title">Envie d'en savoir plus ?</h2><p>Téléchargez mon CV pour découvrir mon parcours, mes formations et mes expériences.</p></div>
+                <a href="Docs/CV_Sebastien_ISHUKWE_KIBUKILA.pdf" class="btn btn-light" download><i class="fas fa-file-pdf" aria-hidden="true"></i> Télécharger le CV (PDF)</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-heading reveal"><p class="eyebrow">03 — Contact</p><h2 id="contact-title" class="section-title">Construisons quelque chose<br><span class="highlight">d'utile ensemble.</span></h2></div>
+                <div class="contact-content">
+                    <div class="contact-info reveal">
+                        <p class="lead">Vous avez un projet en tête ? Écrivez-moi et discutons de vos besoins, de vos idées et de la meilleure façon de les concrétiser.</p>
+                        <div class="contact-details">
+                            <a class="contact-item" href="mailto:ishukwejustin@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i><span>ishukwejustin@gmail.com</span></a>
+                            <a class="contact-item" href="tel:+243997604293"><i class="fas fa-phone" aria-hidden="true"></i><span>+243 997 604 293</span></a>
+                            <div class="contact-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Bukavu, République démocratique du Congo</span></div>
+                        </div>
+                        <div class="social-links" aria-label="Réseaux sociaux">
+                            <a href="https://www.linkedin.com/in/s%C3%A9bastien-ishukwe-a7b00032a" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/sebastien.ishukwe" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://x.com/Ishukwe2002" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://wa.me/243997604293" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                            <a href="https://t.me/SebastienISHUKWE" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Telegram"><i class="fab fa-telegram-plane" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form reveal reveal-delay" action="https://formsubmit.co/ishukwejustin@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio de Sébastien ISHUKWE">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="form-note"><i class="fas fa-paper-plane" aria-hidden="true"></i><span>Votre message sera envoyé directement à Sébastien.</span></div>
+                        <div class="form-group"><label for="name">Nom <span>*</span></label><input type="text" id="name" name="name" autocomplete="name" required></div>
+                        <div class="form-group"><label for="email">Adresse email <span>*</span></label><input type="email" id="email" name="email" autocomplete="email" required></div>
+                        <div class="form-group"><label for="subject">Sujet <span>*</span></label><input type="text" id="subject" name="subject" required></div>
+                        <div class="form-group"><label for="message">Message <span>*</span></label><textarea id="message" name="message" rows="5" required></textarea></div>
+                        <button type="submit" class="btn btn-primary submit-button"><span>Envoyer le message</span><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                        <p class="form-footnote">En envoyant ce formulaire, vous acceptez que vos informations soient utilisées uniquement pour répondre à votre demande.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <footer>Merci d'avoir visité mon portofolio. 
-                <br>Je suis toujours ouvert à de nouvelles opportunités et collaborations. 
-                <br>N'hésitez pas de me contacter !</footer><br>
-            <p>© 2025 Sébastien ISHUKWE. Tous droits réservés.</p>
+        <div class="container footer-inner">
+            <a class="nav-logo footer-logo" href="#accueil"><span class="logo-mark" aria-hidden="true">S</span><span>DevOps Sébastien</span></a>
+            <p>Merci pour votre visite. Ouvert aux nouvelles opportunités et collaborations.</p>
+            <p class="copyright">© <span id="current-year">2026</span> Sébastien ISHUKWE. Tous droits réservés.</p>
         </div>
     </footer>
 
-    <script>
-        // Navigation mobile toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
-
-        // Smooth scrolling pour les liens de navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Formulaire de contact
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Merci pour votre message ! Je vous répondrai bientôt.');
-            this.reset();
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>

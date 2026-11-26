@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sebastien-ux-eng.github.io/portofolio_perso/sitemap.xml
